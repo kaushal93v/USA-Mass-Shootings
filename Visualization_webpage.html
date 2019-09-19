@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>US State Shootings</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+  </head>
+  <style>
+      h1 {
+          background-color: #ff3333;
+}
+      body{
+          background-color: #F9EAEC;
+      }
+          </style>
+  <body>
+      <h1 align="center">Interactive visualization of USA Mass Shootings 1966-2018</h1>
+      <p>A mass shooting is considered as a terrible act committed by individuals or terrorist groups in public or non-public places. In recent times, terrorist groups have used the tactics of mass shootings to fulfill their objectives. Individuals who commit these kinds of activities fall into several categories like students, co-workers, family killers or random strangers.  A mass shooting is generally defined as an incident involving four or more victims of guns related violence. When we hear the word mass shootings, United States is the first thing which comes to the mind. The country which has the highest number of mass shootings in the history is the United States. Let's see the top statistics of the past 50 years</p>
+      <ul>
+      <li>Between the year 1966-2018, the United States has witnessed more than 328 mass shootings that resulted in more than 1477 deaths and 2025 injured. </li>
+    <li>The worst mass shooting in the history of United States is the Las Vegas Shooting which occurred on October 1st, 2017 that resulted in 59 deaths and more than 527 people injured.</li>
+    <li>The number of people injured in this incident is more than the number of people injured in all attacks of 2015 and 2016 combined. </li>
+    <li>On an average, 8 shootings occurred every year in the last 50 years that took 35 lives and 47 injured per year.</li>
+      </ul>
+      <p>
+      This visualization depicts the shootings occurred in the past 50 years on a USA map. Click on each state to know the distribution of pie charts, which gives us the details of the shooter and the attack. A selection button is provided underneath the map which changes the layout of the map and the bar chart according to the type of selection.</p>
+   <div style="position: absolute; bottom: -325px; left: 45%; text-align: center; border: 1px solid black; padding: 10px;">
+        <div> Proportionality Factor </div>
+      <input type="radio" id="total" name="fatalities">
+      <label for="total">Total Victims</label>
+
+      <input type="radio" id="injured" name="fatalities">
+      <label for="injured">Injured</label>
+
+      <input type="radio" id="fatalities" name="fatalities">
+      <label for="fatalities">Fatalities</label>
+    </div>
+  </body>
+    <script src="js/pie.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/bar-chart.js"></script>
+    <script src="js/fatality-toggler-bar-chart.js"></script>
+    <script src="js/us-state-map.js"></script>
+    <script src="js/fatality-toggler.js"></script>
+</html>
